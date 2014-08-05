@@ -1,18 +1,18 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/aokp/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := GalaxyS4G
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aokp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/galaxys4gmtd/full_galaxys4gmtd.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := galaxys4gmtd
-PRODUCT_NAME := cm_galaxys4gmtd
+PRODUCT_NAME := aokp_galaxys4gmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-T959V
 
